@@ -12,9 +12,11 @@
         position: absolute;
         display: flex;
         flex-direction: column;
-        top: 100%;
+        top: 90px;
         right: 0;
+        left: 0;
         background-color: #E5E4CA;
-        width: 100%;
+        width: 80%;
+        margin: auto;
     }
 }
