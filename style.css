@@ -101,24 +101,3 @@
     right: 5%;
     bottom: 5%;
 }
-
-@media(max-width: 768px){
-
-    .menu-icon{
-        display: block;
-    }
-
-    .nav-list{
-        display: none;
-    }
-
-    #menu-toggle:checked + .menu-icon + .nav-list {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        top: 100%;
-        right: 0;
-        background-color: #E5E4CA;
-        width: 100%;
-    }
-}
