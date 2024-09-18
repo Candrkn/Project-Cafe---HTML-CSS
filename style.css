@@ -17,11 +17,16 @@ body{
     background-image:linear-gradient(to top, rgba(0, 0, 0, 0.938), rgba(0, 0, 0, 0)), url(./img/bcg.jpg);
     background-size: cover;
     padding-top: 1%;
+    background-attachment: fixed;
     
 }
 
-.hero-image nav{
+nav{
     position: relative;
+    position: fixed;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
     width: 75%;
     background-color: #E5E4CA;
     display: flex;
@@ -30,6 +35,9 @@ body{
     align-items: center;
     border-radius: 50px;
     padding: 5px 5%;
+    border: 2px solid #3E4B39;
+    z-index: 999;
+    
 }
 
 .menu-toggle{
@@ -59,7 +67,7 @@ body{
     border-radius: 50%;
 }
 
-.hero-image nav ul li a{
+nav ul li a{
     color: #3E4B39;
     font-weight: 600;
     padding: 10px 15px;
@@ -367,4 +375,68 @@ footer .social-media i:hover{
     background-color: #3E4B39;
     padding: 1%;
     color: #E5E4CA;
+}
+
+/* ! Hakkimizda Section */
+
+.hakkimizda{
+    background-color: #E5E4CA;
+}
+
+.hak-content{
+    margin-top: 200px;
+    display: flex;
+    padding: 7% 7%;
+    width: 100%;
+    gap: 20px;
+}
+
+.hak-left{
+    width: 50%;
+    text-align: justify;
+    color: #3E4B39;
+}
+
+.hak-left h3{
+    margin-bottom: 20px;
+}
+
+.hak-right{
+    width: 50%;
+}
+
+.hak-right video{
+    width: 100%;
+    border: 2px solid #3E4B39;
+    border-radius: 30px;
+}
+
+.hakkimizda .ekip{
+    padding: 5% 7%;
+    background-color: #3E4B39;
+}
+
+.hakkimizda .ekip h3{
+    text-align: center;
+    color: #E5E4CA;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.hakkimizda .tum-uyeler{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.hakkimizda .item-info{
+    width: 100%;
+    height: 60px;
+    padding-top: 5px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    background-color: #e5e4caa2;
+    font-weight: 600;
+    color: #262e23;
 }
