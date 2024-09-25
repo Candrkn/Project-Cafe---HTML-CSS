@@ -75,8 +75,9 @@ nav ul li a{
 }
 
 .hero-image .text-container{
-    margin-top: 16%;
-    margin-left: 13%;
+    position: absolute;
+    top: 40%;
+    left: 20%;
     justify-content: space-between;
     align-items: center;
 }
@@ -133,6 +134,7 @@ nav ul li a{
 .product-items{
     padding: 3%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -272,6 +274,7 @@ nav ul li a{
 
 footer{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     background-color: #E5E4CA;
@@ -426,6 +429,7 @@ footer .social-media i:hover{
 
 .hakkimizda .tum-uyeler{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
 }
@@ -533,12 +537,13 @@ footer .social-media i:hover{
     width: 100%;
     padding: 120px 7%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .bize-ulasin .ulasim{
-    width: 25%;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .bize-ulasin .ulasim i{
@@ -554,4 +559,144 @@ footer .social-media i:hover{
 
 .bize-ulasin .ulasim p{
     color: #E5E4CA;
+}
+
+/* ! Menu  */
+
+.menu{
+    width: 100%;
+    background-color: #3E4B39;
+    padding-bottom: 1%;
+    overflow-x: hidden;
+    
+}
+
+.slider{
+    animation: 20s slide infinite;
+    padding-top: 100px;
+}
+
+.slider-content{
+    display: flex;
+    gap: 10px;
+}
+
+.slider-content img{
+    width: 500px;
+    height: 300px;
+    border: 1px solid #E5E4CA;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0px);
+    }
+    15%{
+        transform: translateX(-510px);
+    }
+    30%{
+        transform: translateX(-1020px);
+    }
+    45%{
+        transform: translateX(-1530px);
+    }
+    60%{
+        transform: translateX(-1020px);
+    }
+    75%{
+        transform: translateX(-510px);
+    }
+    90%{
+        transform: translateX(0px);
+    }
+}
+
+/* ! Menu Catalog Bolumu */
+
+.menu-section{
+    position: relative;
+    width: 60%;
+    height: 1000px;
+    background-image: url(img/menu-arkaplan.jpeg);
+    background-size: 93% 100%;
+    background-repeat: no-repeat;
+    margin: auto;
+    border: 5px groove #E5E4CA;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.menu-logo{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.menu-section h3{
+    color: #E5E4CA;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.urun{
+    display: flex;
+    justify-content: center;
+
+}
+
+.urun h4{
+    color: #E5E4CA;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #E5E4CA;
+}
+
+.urun ul li{
+    color: #E5E4CA;
+    letter-spacing: 2px;
+    margin-bottom: 2px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.urun .icecek-left,
+.urun .tatli-right{
+    width: 50%;
+    padding-inline: 5%;
+    padding-top: 2%;
+}
+
+.divider{
+    height: 600px;
+    border: 2px solid #E5E4CA;
+}
+
+.menu-section .yazi{
+    color: #E5E4CA;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+}
+
+.menu-section .menu-btn{
+    background-color: #E5E4CA;
+    border: none;
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    text-align: center;
+}
+
+.menu-section .menu-btn a{
+    color: #3E4B39;
+
 }

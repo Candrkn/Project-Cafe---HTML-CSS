@@ -20,3 +20,128 @@
         margin: auto;
     }
 }
+
+/* ! Footer */
+
+@media screen and (max-width:1000px){
+    footer .center{
+        width: 100%;
+        order: -1;
+    }
+
+    footer .center input{
+        width: 60%;
+    }
+}
+
+/* ! Anasayfa Main Alani*/
+
+@media screen and (max-width:700px){
+
+    .hero-image .text-container .text{
+        width: 90%;
+        left: 50%;
+    }
+
+}
+@media screen and (max-width:578px){
+
+    .hero-image .text-container{
+        left: 30%;
+    }
+
+}
+
+/* ! Hakkimizda Section */
+@media screen and (max-width:1000px){
+    .hak-content{
+        flex-direction: column;
+        
+    }
+    .hak-left,
+    .hak-right{
+        width: 100%;
+    }
+}
+
+/* !Blog Section */
+@media screen and (max-width:1441px){
+    .section-blog-wrapper{
+        padding-inline: 10%;
+    }
+}
+@media screen and (max-width:1150px){
+    .section-blog-wrapper{
+        padding-inline: 2%;
+    }
+}
+@media screen and (max-width:762px){
+    .section-blog-wrapper{
+        padding-inline: 0%;
+    }
+}
+
+/* ! Iletisim Section */
+@media screen and (max-width:900px){
+    .iletisim-content{
+        flex-direction: column;
+    }
+    .iletisim-content .iletisim-left,
+    .iletisim-content .iletisim-right{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width:1028px){
+    .bize-ulasin{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* ! Menu Section */
+
+@media screen and (max-width:1400px){
+    .menu-section .yazi{
+        text-align: center;
+        
+    }
+}
+
+@media screen and (max-width:980px){
+    .menu-section{
+        width: 90%;
+    }
+    .menu-section .yazi{
+        text-align: center;
+        
+    }
+}
+
+@media screen and (max-width:650px){
+    .urun{
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+
+    .urun .icecek-left{
+        margin-bottom: 50px;
+    }
+
+    .urun .icecek-left,
+    .urun .tatli-right{
+        width: 100%;
+    }
+
+    .urun .divider{
+        display: none;
+    }
+
+    .menu-section .yazi{
+        bottom: 40px;
+        text-align: center;
+        
+    }
+}
